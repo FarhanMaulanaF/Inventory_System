@@ -13,6 +13,8 @@ namespace POSandInventory
             ApplicationConfiguration.Initialize();
 
             Application.Run(new Form1());
+
+            // Try add comment
         }
     }
 }
