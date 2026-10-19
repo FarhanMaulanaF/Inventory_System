@@ -28,22 +28,53 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panel1 = new Panel();
+            label1 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.MediumSeaGreen;
+            panel1.Controls.Add(label1);
+            panel1.Dock = DockStyle.Top;
+            panel1.Location = new Point(0, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(880, 40);
+            panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Poppins", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(7, 8);
+            label1.Name = "label1";
+            label1.Size = new Size(123, 28);
+            label1.TabIndex = 2;
+            label1.Text = "Brand Module";
             // 
             // form_brand
             // 
             AutoScaleDimensions = new SizeF(11F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(880, 558);
+            ClientSize = new Size(880, 245);
             ControlBox = false;
+            Controls.Add(panel1);
             Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Margin = new Padding(3, 4, 3, 4);
             Name = "form_brand";
             StartPosition = FormStartPosition.CenterScreen;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
+        private Label label1;
     }
 }

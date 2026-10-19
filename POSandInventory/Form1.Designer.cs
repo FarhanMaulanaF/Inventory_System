@@ -54,7 +54,7 @@
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1284, 40);
+            panel1.Size = new Size(1258, 40);
             panel1.TabIndex = 0;
             // 
             // panel2
@@ -75,11 +75,12 @@
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 40);
             panel2.Name = "panel2";
-            panel2.Size = new Size(300, 661);
+            panel2.Size = new Size(300, 984);
             panel2.TabIndex = 1;
             // 
             // button9
             // 
+            button9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             button9.BackgroundImageLayout = ImageLayout.None;
             button9.FlatAppearance.BorderSize = 0;
             button9.FlatStyle = FlatStyle.Flat;
@@ -267,6 +268,7 @@
             // 
             // panel3
             // 
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panel3.Location = new Point(306, 46);
             panel3.Name = "panel3";
             panel3.Size = new Size(1580, 966);
@@ -276,7 +278,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             AutoSize = true;
-            ClientSize = new Size(1284, 701);
+            ClientSize = new Size(1258, 1024);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
