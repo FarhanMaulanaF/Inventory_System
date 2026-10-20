@@ -268,7 +268,7 @@
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel3.Location = new Point(306, 46);
             panel3.Name = "panel3";
             panel3.Size = new Size(1580, 966);
