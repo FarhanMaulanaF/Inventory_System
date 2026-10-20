@@ -268,10 +268,10 @@
             // 
             // panel3
             // 
-            panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            panel3.Location = new Point(306, 46);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(300, 40);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1580, 966);
+            panel3.Size = new Size(958, 984);
             panel3.TabIndex = 2;
             // 
             // Form1

@@ -63,7 +63,7 @@
             ControlBox = false;
             Controls.Add(panel1);
             Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "form_brand";
             StartPosition = FormStartPosition.CenterScreen;
