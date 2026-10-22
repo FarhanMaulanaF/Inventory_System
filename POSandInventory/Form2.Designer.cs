@@ -28,15 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             panel1 = new Panel();
+            btn_add = new Button();
+            btn_close = new Button();
+            lbl_brandList = new Label();
             dataGridView1 = new DataGridView();
             Column1 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Edit = new DataGridViewImageColumn();
             Delete = new DataGridViewImageColumn();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -44,10 +48,54 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = SystemColors.Control;
+            panel1.Controls.Add(btn_add);
+            panel1.Controls.Add(btn_close);
+            panel1.Controls.Add(lbl_brandList);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(804, 40);
             panel1.TabIndex = 1;
+            // 
+            // btn_add
+            // 
+            btn_add.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_add.BackColor = SystemColors.Control;
+            btn_add.BackgroundImage = (Image)resources.GetObject("btn_add.BackgroundImage");
+            btn_add.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_add.FlatAppearance.BorderSize = 0;
+            btn_add.FlatStyle = FlatStyle.Flat;
+            btn_add.Location = new Point(710, -2);
+            btn_add.Name = "btn_add";
+            btn_add.Size = new Size(43, 44);
+            btn_add.TabIndex = 5;
+            btn_add.UseVisualStyleBackColor = false;
+            btn_add.Click += btn_add_Click;
+            // 
+            // btn_close
+            // 
+            btn_close.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_close.BackColor = SystemColors.Control;
+            btn_close.BackgroundImage = (Image)resources.GetObject("btn_close.BackgroundImage");
+            btn_close.BackgroundImageLayout = ImageLayout.Zoom;
+            btn_close.FlatAppearance.BorderSize = 0;
+            btn_close.FlatStyle = FlatStyle.Flat;
+            btn_close.Location = new Point(754, 1);
+            btn_close.Name = "btn_close";
+            btn_close.Size = new Size(38, 37);
+            btn_close.TabIndex = 4;
+            btn_close.UseVisualStyleBackColor = false;
+            // 
+            // lbl_brandList
+            // 
+            lbl_brandList.AutoSize = true;
+            lbl_brandList.BackColor = Color.Transparent;
+            lbl_brandList.Font = new Font("Poppins", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_brandList.ForeColor = Color.FromArgb(32, 32, 32);
+            lbl_brandList.Location = new Point(12, 3);
+            lbl_brandList.Name = "lbl_brandList";
+            lbl_brandList.Size = new Size(138, 42);
+            lbl_brandList.TabIndex = 3;
+            lbl_brandList.Text = "Brand List";
             // 
             // dataGridView1
             // 
@@ -129,6 +177,8 @@
             Name = "Form2";
             Text = "Form2";
             WindowState = FormWindowState.Maximized;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
@@ -142,5 +192,8 @@
         private DataGridViewTextBoxColumn Column3;
         private DataGridViewImageColumn Edit;
         private DataGridViewImageColumn Delete;
+        private Label lbl_brandList;
+        private Button btn_close;
+        private Button btn_add;
     }
 }

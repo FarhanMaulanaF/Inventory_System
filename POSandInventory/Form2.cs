@@ -13,10 +13,16 @@ namespace POSandInventory
         public Form2()
         {
             InitializeComponent();
-            for(int i = 0; i <= 10; ++i)
+            for (int i = 0; i <= 10; ++i)
             {
                 dataGridView1.Rows.Add(i, "1", "BRAND " + i);
             }
+        }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            form_brand brandForm = new form_brand();
+            brandForm.ShowDialog();
         }
     }
 }
