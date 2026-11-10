@@ -14,15 +14,12 @@ namespace POSandInventory
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBConnection dbcon = new DBConnection();
-        public form_brand()
+        Form2 frmlist;
+        public form_brand(Form2 flist)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
-        }
-
-        private void form_brand_Load(object sender, EventArgs e)
-        {
-
+            frmlist = flist;
         }
 
         private void clear()
@@ -45,6 +42,7 @@ namespace POSandInventory
                     cn.Close();
                     MessageBox.Show("Brand has been successfully saved.");
                     clear();
+                    frmlist.loadBrand();
                 }
             }
             catch (Exception ex)
@@ -55,7 +53,12 @@ namespace POSandInventory
 
         private void btn_close_Click(object sender, EventArgs e)
         {
-           
+            this.Close();
+        }
+
+        private void btn_cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

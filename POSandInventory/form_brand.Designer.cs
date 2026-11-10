@@ -136,6 +136,7 @@
             btn_cancel.TabIndex = 6;
             btn_cancel.Text = "Cancel";
             btn_cancel.UseVisualStyleBackColor = false;
+            btn_cancel.Click += btn_cancel_Click;
             // 
             // form_brand
             // 
@@ -154,7 +155,6 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "form_brand";
             StartPosition = FormStartPosition.CenterScreen;
-            Load += form_brand_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);

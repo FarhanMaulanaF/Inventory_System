@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,19 +11,38 @@ namespace POSandInventory
 {
     public partial class Form2 : Form
     {
+
+        SqlConnection cn = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        DBConnection dbcon = new DBConnection();
         public Form2()
         {
             InitializeComponent();
-            for (int i = 0; i <= 10; ++i)
-            {
-                dataGridView1.Rows.Add(i, "1", "BRAND " + i);
-            }
+            cn = new SqlConnection(dbcon.MyConnection());
+            loadBrand();
         }
 
         private void btn_add_Click(object sender, EventArgs e)
         {
-            form_brand brandForm = new form_brand();
+            form_brand brandForm = new form_brand(this);
             brandForm.ShowDialog();
+        }
+
+        public void loadBrand()
+        {
+            int i = 0;
+            dgv_brandList.Rows.Clear();
+            cn.Open();
+            cmd = new SqlCommand("SELECT * FROM tblBrand order by brand", cn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                i++;
+                dgv_brandList.Rows.Add(i, dr["id"].ToString()!, dr["brand"].ToString()!);
+
+            }
+            dr.Close();
+            cn.Close();
         }
     }
 }

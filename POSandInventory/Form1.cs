@@ -14,8 +14,6 @@ namespace POSandInventory
             InitializeComponent();
 
             cn = new SqlConnection(dbcon.MyConnection());
-            cn.Open();
-            MessageBox.Show("Connected");
         }
 
         private void btn_manageBrand_Click(object sender, EventArgs e)
