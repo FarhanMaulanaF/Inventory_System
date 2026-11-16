@@ -120,7 +120,7 @@
             dgv_brandList.RowHeadersVisible = false;
             dgv_brandList.RowHeadersWidth = 62;
             dgv_brandList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgv_brandList.Size = new Size(804, 213);
+            dgv_brandList.Size = new Size(804, 384);
             dgv_brandList.TabIndex = 2;
             // 
             // Column1
