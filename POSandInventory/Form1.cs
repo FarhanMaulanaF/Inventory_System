@@ -18,7 +18,7 @@ namespace POSandInventory
 
         private void btn_manageBrand_Click(object sender, EventArgs e)
         {
-            Form2 brandList = new Form2();
+            form_brandList brandList = new form_brandList();
             brandList.TopLevel = false;
             panel3.Controls.Add(brandList);
             brandList.BringToFront();

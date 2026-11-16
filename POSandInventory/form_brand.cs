@@ -14,8 +14,8 @@ namespace POSandInventory
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBConnection dbcon = new DBConnection();
-        Form2 frmlist;
-        public form_brand(Form2 flist)
+        form_brandList frmlist;
+        public form_brand(form_brandList flist)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.MyConnection());
