@@ -44,5 +44,18 @@ namespace POSandInventory
             dr.Close();
             cn.Close();
         }
+
+        private void dgv_brandList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dgv_brandList.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+                if (e.RowIndex < 0) return;
+
+                form_brand brandForm = new form_brand(this);
+                brandForm.tb_brandName.Text = dgv_brandList.Rows[e.RowIndex].Cells[2].Value?.ToString() ?? "";
+                brandForm.ShowDialog(); 
+            }
+        }
     }
 }

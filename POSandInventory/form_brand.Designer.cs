@@ -69,21 +69,21 @@
             // 
             lbl_brandModule.AutoSize = true;
             lbl_brandModule.BackColor = Color.Transparent;
-            lbl_brandModule.Font = new Font("Poppins", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_brandModule.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_brandModule.ForeColor = Color.White;
             lbl_brandModule.Location = new Point(7, 1);
             lbl_brandModule.Name = "lbl_brandModule";
-            lbl_brandModule.Size = new Size(188, 42);
+            lbl_brandModule.Size = new Size(176, 29);
             lbl_brandModule.TabIndex = 2;
             lbl_brandModule.Text = "Brand Module";
             // 
             // lbl_brandName
             // 
             lbl_brandName.AutoSize = true;
-            lbl_brandName.Font = new Font("Poppins", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbl_brandName.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbl_brandName.Location = new Point(12, 73);
             lbl_brandName.Name = "lbl_brandName";
-            lbl_brandName.Size = new Size(112, 28);
+            lbl_brandName.Size = new Size(98, 20);
             lbl_brandName.TabIndex = 2;
             lbl_brandName.Text = "Brand Name";
             // 
@@ -91,7 +91,7 @@
             // 
             tb_brandName.Location = new Point(139, 68);
             tb_brandName.Name = "tb_brandName";
-            tb_brandName.Size = new Size(728, 34);
+            tb_brandName.Size = new Size(728, 28);
             tb_brandName.TabIndex = 3;
             // 
             // btn_save
@@ -99,7 +99,7 @@
             btn_save.BackColor = Color.FromArgb(32, 32, 32);
             btn_save.FlatAppearance.BorderSize = 0;
             btn_save.FlatStyle = FlatStyle.Flat;
-            btn_save.Font = new Font("Poppins", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_save.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_save.ForeColor = Color.White;
             btn_save.Location = new Point(139, 131);
             btn_save.Name = "btn_save";
@@ -114,7 +114,7 @@
             btn_update.BackColor = Color.FromArgb(32, 32, 32);
             btn_update.FlatAppearance.BorderSize = 0;
             btn_update.FlatStyle = FlatStyle.Flat;
-            btn_update.Font = new Font("Poppins", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_update.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_update.ForeColor = Color.White;
             btn_update.Location = new Point(257, 131);
             btn_update.Name = "btn_update";
@@ -128,7 +128,7 @@
             btn_cancel.BackColor = Color.Silver;
             btn_cancel.FlatAppearance.BorderSize = 0;
             btn_cancel.FlatStyle = FlatStyle.Flat;
-            btn_cancel.Font = new Font("Poppins", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btn_cancel.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_cancel.ForeColor = Color.Black;
             btn_cancel.Location = new Point(375, 131);
             btn_cancel.Name = "btn_cancel";
@@ -140,7 +140,7 @@
             // 
             // form_brand
             // 
-            AutoScaleDimensions = new SizeF(11F, 31F);
+            AutoScaleDimensions = new SizeF(10F, 22F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(880, 192);
             ControlBox = false;
@@ -150,7 +150,7 @@
             Controls.Add(tb_brandName);
             Controls.Add(lbl_brandName);
             Controls.Add(panel1);
-            Font = new Font("Poppins", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "form_brand";
@@ -167,9 +167,9 @@
         private Label lbl_brandModule;
         private Button btn_close;
         private Label lbl_brandName;
-        private TextBox tb_brandName;
-        private Button btn_save;
-        private Button btn_update;
         private Button btn_cancel;
+        public TextBox tb_brandName;
+        public Button btn_save;
+        public Button btn_update;
     }
 }
